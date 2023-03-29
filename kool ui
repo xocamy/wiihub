@@ -8,6 +8,33 @@ local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local HTTPService = game:GetService("HttpService")
 
+local is_paid_user = false
+local is_hub_influencer = false
+local is_discord_admin = false
+local is_discord_helper = false
+local is_discord_mod = false
+local is_script_developer = true
+
+if is_paid_user then
+    user_type_text = "Premium User"
+    else if is_hub_influencer then
+        user_type_text = "Script Influencer"
+    else if is_discord_admin then
+        user_type_text = "Discord Admin"
+    else if is_discord_helper then
+        user_type_text = "Discord Helper" 
+    else if is_discord_mod then
+        user_type_text = "Discord Moderator" 
+    else if is_script_developer then
+        user_type_text = "Script Developer" 
+    else user_type_text = "Free User"
+end
+end
+end
+end
+end
+end
+
 local Library = {
 	Themes = {
 		Legacy = {
@@ -411,7 +438,7 @@ function Library:create(options)
 	end
 
 	options = self:set_defaults({
-		Name = "AceHub v2",
+		Name = "WiiHub",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = "https://github.life/"
@@ -655,7 +682,7 @@ function Library:create(options)
 		AnchorPoint = Vector2.new(0, .5),
 		BackgroundTransparency = 1,
 		TextSize = 14,
-		Text = "AceHub v2",
+		Text = "WiiHub",
 		Position = UDim2.new(0, 25, 0.5, 0),
 		TextXAlignment = Enum.TextXAlignment.Left,
 		Size = UDim2.new(1, -45, 0.5, 0),
