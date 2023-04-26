@@ -1,1 +1,1 @@
-game.Players.LocalPlayer:Kick("SPAM PING SDHHF FOR FREE ROBUX")
+game.Players.LocalPlayer:kick("SPAM PING SDHHF FOR FREE ROBUX")
