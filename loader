@@ -6,6 +6,10 @@
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local DropShadowHolder = Instance.new("Frame")
+local DropShadow = Instance.new("ImageLabel")
+local UICorner_2 = Instance.new("UICorner")
 
 --Properties:
 
@@ -21,9 +25,34 @@ TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.Position = UDim2.new(0, 0, -0.0332326293, 0)
 TextLabel.Size = UDim2.new(0, 512, 0, 342)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "hey there! you are probably wondering where your wiigen script is. well i have edited the script to anything i can do so you should join discord.gg/wiihub for wiihub cracked thanks bye "
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "hi guys! wiigen is bad and dont use it bye"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
+
+UICorner.Parent = TextLabel
+
+DropShadowHolder.Name = "DropShadowHolder"
+DropShadowHolder.Parent = Frame
+DropShadowHolder.BackgroundTransparency = 1.000
+DropShadowHolder.BorderSizePixel = 0
+DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder.ZIndex = 0
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = DropShadowHolder
+DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow.BackgroundTransparency = 1.000
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow.Size = UDim2.new(1, 47, 1, 47)
+DropShadow.ZIndex = 0
+DropShadow.Image = "rbxassetid://6014261993"
+DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow.ImageTransparency = 0.500
+DropShadow.ScaleType = Enum.ScaleType.Slice
+DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
+
+UICorner_2.Parent = Frame
