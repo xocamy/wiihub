@@ -1,3 +1,29 @@
-local player = game.Players.LocalPlayer
+-- Gui to Lua
+-- Version: 3.2
 
-player:Kick("ay wiigen gone for a bit! discord.gg/wiihub")
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.295340508, 0, 0.322942644, 0)
+Frame.Size = UDim2.new(0, 511, 0, 331)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0, 0, -0.0332326293, 0)
+TextLabel.Size = UDim2.new(0, 512, 0, 342)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "hey there! you are probably wondering where your wiigen script is. well i have edited the script to anything i can do so you should join discord.gg/wiihub for wiihub cracked thanks bye "
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
