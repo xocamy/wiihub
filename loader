@@ -1,1 +1,27 @@
+local gameId = game.GameId
 
+if gameId == 3150475059 then
+
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ae28859a928396a5f09f847895ec4fb9.lua"))()
+    print("WiiHub Football Fusion 2 loaded successfully")
+    
+elseif gameId == 2766122154 then
+
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/1ae7b194924444deacaaf0ad76d53e41.lua"))()
+    print("WiiHub Football Duels loaded successfully")
+
+elseif gameId == 601130232 then
+
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b6f70c2951aa69f6c34459cdf73cd079.lua"))()
+    print("WiiHub Bee Swarm Simulator loaded successfully")
+
+elseif gameId == 111958650 then
+
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e289dedbe727c48af275692ba9066a4f.lua"))()
+    print("WiiHub Arsenal loaded successfully")
+
+else
+
+    print("Unsupported Game")
+
+end
