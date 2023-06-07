@@ -7,12 +7,12 @@ if gameId == 3150475059 then
     
 elseif gameId == 2766122154 then
 
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/1ae7b194924444deacaaf0ad76d53e41.lua"))()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/def49ec3ea7cf62237e9bb9322df6290.lua"))()
     print("WiiHub Football Duels loaded successfully")
 
 elseif gameId == 601130232 then
 
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b6f70c2951aa69f6c34459cdf73cd079.lua"))()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5a326525c3c96db44069e25411625c75.lua"))()
     print("WiiHub Bee Swarm Simulator loaded successfully")
 
 elseif gameId == 111958650 then
