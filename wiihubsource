@@ -3,6 +3,10 @@ if not LPH_OBFUSCATED then
 	LPH_NO_VIRTUALIZE = function(...) return(...) end;
 end
 
+for i,v in next, getconnections(game:GetService("ScriptContext").Error) do
+    v:Disable()
+end
+
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 local jobId = game.JobId
