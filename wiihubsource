@@ -7,6 +7,8 @@ for i,v in next, getconnections(game:GetService("ScriptContext").Error) do
     v:Disable()
 end
 
+hookfunction(game:GetService("LogService").GetLogHistory, function() return {} end)
+
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 local jobId = game.JobId
