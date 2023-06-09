@@ -1948,7 +1948,7 @@ local throwData = {
 task.spawn(function()
 	--// variables
 	local gui = game:GetObjects("rbxassetid://13608686945")[1]
-	local mouse = loadstring(game:HttpGet("https://raw.githubusercontent.com/madmodss/mouse/main/mouse"))()
+	local mouse = loadstring(game:HttpGet("https://raw.githubusercontent.com/vFishyTurtle/wobble/main/mouse"))()
 	local mouseRaycastParams = RaycastParams.new()	
 	local usePart = Instance.new("Part")
 	usePart.Anchored = true
